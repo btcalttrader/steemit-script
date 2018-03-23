@@ -4,14 +4,14 @@ const steem = require("steem");
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-    host: "db4free.net",
-    user: "carlososuna",
-    password: "29772315",
-    database: "carlososuna"
+    host: "db4free.net",// the db used
+    user: "YOUR USER",
+    password: "YOUR PASS",
+    database: "YOUR DB NAME"
 });
 
 con.connect();
-var bot = new Eris("NDI0MzU4NzM5NjU1NjU1NDQ0.DZXDaA.tbeCZxMQowNHd0nUnYoJVH2V4uA", { // We create a new instance of our bot (usually named client)
+var bot = new Eris("THE BOT TOKEN", { // We create a new instance of our bot (usually named client)
     disableEveryone: true, // Makes it programmatically impossible for the bot to mention @everyone
     getAllUsers: true // It fetches all users, Good for small bots. (recommend)
   });
