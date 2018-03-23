@@ -6,9 +6,9 @@ var mysql = require('mysql');
 
 var con = mysql.createConnection({
     host: "db4free.net",//the host that I use came from here
-user: "<strong> YOUR USER </strong>",
-    password: "<strong> YOUR PASSWORD </strong>",
-    database: "<strong> YOUR DB NAME</strong>"
+    user: "YOUR USER",
+    password: "PASSWORD",
+    database: "DB NAME"
 });
 
 con.connect();
