@@ -12,6 +12,7 @@
     },
     "version": "1.0.0",
     "scripts": {
-      "start": "bot.js"
+      "start": "bot.js",
+      "start": "server.js"
     }
   }
