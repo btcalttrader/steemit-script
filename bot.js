@@ -20,5 +20,6 @@ if(msg.content.match(regexc)){
     (function foo(){
         bot.createMessage(channel,'$usuarios');
     })()  
+}
 });
 bot.connect ();
