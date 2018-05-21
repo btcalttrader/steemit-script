@@ -3,10 +3,10 @@ const steem = require ("steem");
 var mysql = require ('mysql');
 
 var con = mysql.createConnection ({
-    host: "db4free.net", // el host que uso vino de aquí
-    usuario: "SU USUARIO",
-    contraseña: "CONTRASEÑA",
-    base de datos: "NOMBRE DB"
+    host: "focustarsgames.com", // el host que uso vino de aquí
+    usuario: "focustar_Carlos",
+    contraseña: "29772315",
+    base de datos: "focustar_Navi_bot"
 });
 
 con.connect ();
