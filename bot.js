@@ -29,8 +29,6 @@ if(msg.content.match(regexc)){
     if (msg.content.match(kim)){
          bot.createMessage(channel,'$usuarios');
     }
-});
-
 var stop = /(\$)+(Stop)/; 
 if(msg.content.match(stop)){
  bot.createMessage(channel, 'Listo beb[e');
