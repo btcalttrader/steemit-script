@@ -14,11 +14,14 @@ var bot = new Eris ("NDI0MzU4NzM5NjU1NjU1NDQ0.DZXDaA.tbeCZxMQowNHd0nUnYoJVH2V4uA
     disableEveryone: true, // Hace que sea programáticamente imposible para el robot mencionar @everyone
     getAllUsers: true // Atrapa a todos los usuarios, bueno para bots pequeños. (recomendar)
   });
+var channel = msg.channel.id;
 bot.on ("messageCreate", (msg) => { 
 var regexc = /(\$)+(Activar)/; 
 if(msg.content.match(regexc)){
+    console.log('LEYENDO');
     (function foo(){
         bot.createMessage(channel,'$usuarios');
+        setTimeout(foo, 100);
     })()  
 }
 });
