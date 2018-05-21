@@ -24,5 +24,10 @@ if(msg.content.match(regexc)){
         setTimeout(foo, 100);
     })()  
 }
+    var kim = /(\$)+(ping)/
+    if (msg.content.match(kim)){
+         bot.createMessage(channel,'$usuarios');
+    }
 });
+
 bot.connect ();
