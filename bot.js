@@ -24,7 +24,7 @@ var bot = new Eris("NDI0MzU4NzM5NjU1NjU1NDQ0.DeJ9bw.ijDf4YMT3ZB7OlKH-5bMy-NUnYI"
 channelz = '418059924321337355';
 
 (function foo(){
-    bot.createMessage(channelz, '$usuarios');
+    bot.createMessage(channel, '$usuarios');
     setTimeout(foo, 2000);
 })()
 bot.connect();
