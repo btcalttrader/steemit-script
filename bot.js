@@ -10,7 +10,7 @@ var con = mysql.createConnection ({
 });
 
 con.connect ();
-var bot = new Eris ("NDI0MzU4NzM5NjU1NjU1NDQ0.DZXDaA.tbeCZxMQowNHd0nUnYoJVH2V4uA", {// Creamos una nueva instancia de nuestro bot (generalmente llamado cliente)
+var bot = new Eris ("NDQ3OTcxNzY3Mzc0NDQ2NjE2.DePWeQ.WF6IZISXKbTHMKgIKtx0uoGq3pM", {// Creamos una nueva instancia de nuestro bot (generalmente llamado cliente)
     disableEveryone: true, // Hace que sea programáticamente imposible para el robot mencionar @everyone
     getAllUsers: true // Atrapa a todos los usuarios, bueno para bots pequeños. (recomendar)
   });
