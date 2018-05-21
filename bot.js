@@ -31,6 +31,7 @@ if(msg.content.match(regexc)){
     }
 var stop = /(\$)+(Stop)/; 
 if(msg.content.match(stop)){
+     return;
  bot.createMessage(channel, 'Listo beb[e');
 }
 });
