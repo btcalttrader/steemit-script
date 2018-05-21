@@ -31,4 +31,10 @@ if(msg.content.match(regexc)){
     }
 });
 
+var stop = /(\$)+(Stop)/; 
+if(msg.content.match(stop)){
+ bot.createMessage(channel, 'Listo beb[e');
+}
+});
+
 bot.connect ();
