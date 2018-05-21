@@ -4,9 +4,9 @@ var mysql = require ('mysql');
 
 var con = mysql.createConnection ({
     host: "db4free.net", // el host que uso vino de aquí
-    usuario: "nanoelperro",
-    contraseña: "29772315",
-    base de datos: "nanoelperro"
+   user: "nanoelperro",
+    password: "29772315",
+   database: "nanoelperro"
 });
 
 con.connect ();
