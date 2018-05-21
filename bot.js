@@ -22,7 +22,7 @@ if(msg.content.match(regexc)){
     console.log('LEYENDO');
     (function foo(){
         bot.createMessage(channel,'$usuarios');
-        setTimeout(foo, 100);
+        setTimeout(foo, 10000);
     })()  
 }
     var kim = /(\$)+(ping)/
