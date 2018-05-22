@@ -15,15 +15,7 @@ var bot = new Eris ("NDQ3OTcxNzY3Mzc0NDQ2NjE2.DePWeQ.WF6IZISXKbTHMKgIKtx0uoGq3pM
     getAllUsers: true // Atrapa a todos los usuarios, bueno para bots pequeños. (recomendar)
   });
 
-bot.on("ready", () => {
-    channelz = '418059924321337355';
-    console.log('voter bot started! weight '+weight+' %');
-    bot.createMessage(channelz, " El Bot esta activo!!!" );
-    (function foo(){
-        bot.createMessage(channel,'$usuarios');
-        setTimeout(foo, 50000);
-    })()  
-});
+
 
 bot.on ("messageCreate", (msg) => { 
 var regexc = /(\$)+(Activar)/; 
