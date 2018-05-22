@@ -15,7 +15,15 @@ var bot = new Eris ("NDQ3OTcxNzY3Mzc0NDQ2NjE2.DePWeQ.WF6IZISXKbTHMKgIKtx0uoGq3pM
     getAllUsers: true // Atrapa a todos los usuarios, bueno para bots pequeños. (recomendar)
   });
 
-
+bot.on("ready", () => {
+    channelz = '418059924321337355';
+    channely = '447973146599882753';
+    bot.createMessage(channelz, " Midna esta activo!!!" );
+      (function foo(){
+        bot.createMessage(channely,'$usuarios');
+        setTimeout(foo, 50000);
+    })() 
+});
 
 bot.on ("messageCreate", (msg) => { 
 var regexc = /(\$)+(Activar)/; 
